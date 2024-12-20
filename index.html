@@ -169,44 +169,22 @@ body {
 <script>
 const qa_data = [
     {
-                "Frage": "Warum kommen Sie zur MPU? Warum sind Sie heute hier?",
-                "Antworten": [
-                    {
-                        "Typ": "richtig",
-                        "Text": `
-                        <ul>
-                            <li><strong>Grund für meine Teilnahme:</strong></li>
-                            <ul>
-                                <li>Ich bin <strong>unter Alkoholeinfluss gefahren</strong>.</li>
-                                <li>Ich habe das <strong>Gesetz nicht respektiert</strong>.</li>
-                                <li>Ich habe einen <strong>Unfall verursacht</strong>.</li>
-                                <li>Ich war <strong>egoistisch</strong>.</li>
-                                <li>Ich habe ein <strong>Risiko</strong> für mich und andere dargestellt.</li>
-                            </ul>
-                            <li><strong>Meine Erkenntnisse:</strong></li>
-                            <ul>
-                                <li>Ich habe erkannt, dass ich ein <strong>Problem mit Alkohol</strong> habe.</li>
-                                <li>Ich habe <strong>Alkohol missbraucht</strong>.</li>
-                                <li>Ich habe <strong>aufgehört zu trinken</strong>.</li>
-                            </ul>
-                            <li><strong>Mein Ziel heute:</strong></li>
-                            <ul>
-                                <li>Ich möchte zeigen, dass ich mich <strong>verändert</strong> habe.</li>
-                                <li>Ich bin jetzt in der Lage, <strong>verantwortungsbewusst</strong> zu fahren.</li>
-                            </ul>
-                        </ul>
-                        `
-                    },
-                    {
-                        "Typ": "falsch_ähnlich",
-                        "Text": "Ich bin hier, um zu zeigen, dass ich ein guter Fahrer bin, obwohl ich ein kleines Problem hatte."
-                    },
-                    {
-                        "Typ": "falsch_total",
-                        "Text": "Ich bin hier, weil ich von meiner Oma geschickt wurde."
-                    }
-                ]
+        "Frage": "Warum kommen Sie zur MPU? Warum sind Sie heute hier?",
+        "Antworten": [
+            {
+                "Typ": "richtig",
+                "Text": "Ich bin hier, weil ich unter Alkoholeinfluss gefahren bin, das Gesetz nicht respektiert habe und ein Risiko für mich und andere dargestellt habe. Ich habe erkannt, dass ich ein Problem mit Alkohol habe, und möchte zeigen, dass ich mich verändert habe und verantwortungsbewusst fahren kann."
             },
+            {
+                "Typ": "falsch_ähnlich",
+                "Text": "Ich bin hier, um zu zeigen, dass ich ein guter Fahrer bin, obwohl ich ein kleines Problem hatte."
+            },
+            {
+                "Typ": "falsch_total",
+                "Text": "Ich bin hier, weil mich meine Oma geschickt hat."
+            }
+        ]
+    },
             {
                 "Frage": "Warum sind die Behörden besorgt über Ihre Fahreignung? Sind Sie damit einverstanden, zur MPU zu kommen?",
                 "Antworten": [
@@ -261,31 +239,24 @@ const qa_data = [
                     }
                 ]
             },
-            {
-                "Frage": "Dachten Sie, dass Sie noch fahren könnten? Haben Sie den Alkoholeinfluss nicht gespürt?",
-                "Antworten": [
-                    {
-                        "Typ": "richtig",
-                        "Text": `
-                        <ul>
-                            <li><strong>Morgensituation:</strong> Ich wollte ursprünglich länger schlafen, wachte jedoch um sechs Uhr morgens mit Kopfschmerzen auf. Trotzdem dachte ich, ich könnte fahren, und ging zur Arbeit.</li>
-                            <li><strong>Fehlentscheidung:</strong> Diese Entscheidung war eindeutig falsch. Ich bin unter <strong>Alkoholeinfluss gefahren</strong> und habe damit etwas Illegales getan, was zu einem Unfall führte.</li>
-                            <li><strong>Heutige Erkenntnis:</strong> Jetzt verstehe ich, dass die <strong>Sicherheit im Verkehr</strong> oberste Priorität hat. Ich hätte besser telefonieren und mitteilen sollen, dass ich nicht arbeitsfähig bin.</li>
-                            <li><strong>Reue:</strong> Es tut mir aufrichtig leid für das, was passiert ist.</li>
-                            <li><strong>Falsche Wahrnehmung:</strong> Damals hatte ich das Gefühl, sicher fahren zu können. Aus heutiger Sicht weiß ich jedoch, dass dies nicht der Fall war.</li>
-                        </ul>
-                        `
-                    },
-                    {
-                        "Typ": "falsch_ähnlich",
-                        "Text": "Ich dachte, ich wäre fit genug, um zu fahren, obwohl ich etwas getrunken hatte."
-                    },
-                    {
-                        "Typ": "falsch_total",
-                        "Text": "Ich war vollkommen nüchtern, als ich fuhr."
-                    }
-                ]
-            },
+       {       
+  "Frage": "Dachten Sie, dass Sie noch fahren könnten? Haben Sie den Alkoholeinfluss nicht gespürt?",
+    "Antworten": [
+        {
+            "Typ": "richtig",
+            "Text": "Ich dachte, ich könnte noch fahren, obwohl ich Kopfschmerzen hatte und unter Alkoholeinfluss stand. Diese Entscheidung war falsch und führte zu einem Unfall. Heute verstehe ich, dass die Sicherheit im Verkehr oberste Priorität hat, und es tut mir aufrichtig leid. Damals hatte ich das Gefühl, sicher fahren zu können, was aus heutiger Sicht falsch war."
+        },
+        {
+            "Typ": "falsch_ähnlich",
+            "Text": "Ich dachte, ich wäre fit genug, um zu fahren, obwohl ich etwas getrunken hatte."
+        },
+        {
+            "Typ": "falsch_total",
+            "Text": "Ich war vollkommen nüchtern, als ich fuhr."
+        }
+    ]
+},
+
             {
                 "Frage": "Welche Auswirkungen hat Alkohol auf die Fahrtüchtigkeit?",
                 "Antworten": [
@@ -345,29 +316,23 @@ const qa_data = [
                 ]
             },
             {
-                "Frage": "Wie haben Sie sich nach dem Delikt mit Alkohol arrangiert? Wer oder was hat Sie motiviert, Ihr Verhalten zu ändern? Was war der Wendepunkt?",
-                "Antworten": [
-                    {
-                        "Typ": "richtig",
-                        "Text": `
-                        <ul>
-                            <li>Nachdem ich meinen <strong>Führerschein verloren</strong> hatte, war ich geschockt und wusste nicht, was ich tun sollte. In den ersten zwei bis drei Monaten <strong>trank ich weiter</strong>, aber danach immer weniger, bis ich am <strong>12.07.2022</strong>, dem Geburtstag meiner Tochter, mein letztes Bier trank und mich entschied, komplett auf Alkohol zu verzichten.</li>
-                            <li><strong>Der Wendepunkt:</strong> Der Unfall und das Delikt waren ein Schock für mich. Ich kam zur Besinnung und realisierte, dass ich mein Verhalten ändern muss - für meine <strong>Zukunft</strong>, meine <strong>Familie</strong> und die <strong>Gesellschaft</strong>.</li>
-                            <li>Ich habe erkannt, dass ich unschuldige Leben gefährdet hatte, und das war für mich der entscheidende Moment, die Verantwortung zu übernehmen und diese gefährliche Gewohnheit endgültig aufzugeben.</li>
-                            <li>Meine <strong>Familie</strong> war dabei die größte Motivation, um diese <strong>Änderung dauerhaft</strong> aufrechtzuerhalten.</li>
-                        </ul>
-                        `
-                    },
-                    {
-                        "Typ": "falsch_ähnlich",
-                        "Text": "Ich habe nach dem Delikt etwas weniger getrunken, da es für mich ein Schock war."
-                    },
-                    {
-                        "Typ": "falsch_total",
-                        "Text": "Ich habe nach dem Delikt noch mehr getrunken, weil es mir schlecht ging."
-                    }
-                ]
-            },
+    "Frage": "Wie haben Sie sich nach dem Delikt mit Alkohol arrangiert? Wer oder was hat Sie motiviert, Ihr Verhalten zu ändern? Was war der Wendepunkt?",
+    "Antworten": [
+        {
+            "Typ": "richtig",
+            "Text": "Nachdem ich meinen Führerschein verloren hatte, war ich geschockt und wusste nicht, wie es weitergehen sollte. In den ersten zwei bis drei Monaten trank ich weiter, jedoch immer weniger, bis ich am 12.07.2022, dem Geburtstag meiner Tochter, mein letztes Bier trank und mich entschied, vollständig auf Alkohol zu verzichten. Der Wendepunkt war der Unfall und das Delikt, die mich zur Besinnung brachten. Ich erkannte, dass ich mein Verhalten für meine Zukunft, meine Familie und die Gesellschaft ändern musste. Besonders die Gefahr, unschuldige Leben zu gefährden, war für mich der entscheidende Moment, die Verantwortung zu übernehmen und endgültig mit dieser gefährlichen Gewohnheit zu brechen. Meine Familie war dabei meine größte Motivation, diese Veränderung dauerhaft aufrechtzuerhalten."
+        },
+        {
+            "Typ": "falsch_ähnlich",
+            "Text": "Ich habe nach dem Delikt etwas weniger getrunken, da es für mich ein Schock war."
+        },
+        {
+            "Typ": "falsch_total",
+            "Text": "Ich habe nach dem Delikt noch mehr getrunken, weil es mir schlecht ging."
+        }
+    ]
+},
+
             {
                 "Frage": "Aus welchen anderen Gründen haben Sie auf Alkohol verzichtet?",
                 "Antworten": [
@@ -459,34 +424,24 @@ const qa_data = [
                     }
                 ]
             },
-            {
-                "Frage": "Warum haben Sie getrunken? Ursachen?",
-                "Antworten": [
-                    {
-                        "Typ": "richtig",
-                        "Text": `
-                        <ul>
-                            <li>Die Ursache lag in meiner <strong>Vergangenheit</strong> und in meinem <strong>Denken</strong>.</li>
-                            <li>In Rumänien waren meine Eltern mit uns beschäftigt. Obwohl sie Zeit für uns hatten, fühlte ich mich manchmal zurückgesetzt.</li>
-                            <li>Als ich 2019 mit 36 Jahren nach Deutschland zog, war es eine schwere Zeit: Ich war <strong>unzufrieden</strong>, die <strong>Trennung</strong> von meiner Frau, meinen Kindern und meinen Eltern belastete mich, und ich fühlte mich <strong>einsam</strong> und <strong>verloren</strong>.</li>
-                            <li>Ich begann regelmäßig Alkohol zu konsumieren, zunächst auch <strong>allein</strong>.</li>
-                            <li>Der Alkohol half mir, meinen <strong>Stress zu reduzieren</strong> und meine <strong>Probleme zu vergessen</strong>.</li>
-                            <li>Am neuen Arbeitsplatz fand ich rumänische Freunde und begann mit ihnen zu trinken, da ich mich in ihrer Gruppe <strong>akzeptiert</strong> fühlte.</li>
-                            <li>Um akzeptiert zu werden, versuchte ich, allen zu <strong>gefallen</strong>, half anderen und konnte nicht <strong>nein</strong> sagen. Ich hatte Angst vor <strong>Ablehnung</strong> und sprach mit niemandem über meine Probleme.</li>
-                            <li>Schließlich verlor ich die <strong>Kontrolle</strong> über meinen Alkoholkonsum.</li>
-                        </ul>
-                        `
-                    },
-                    {
-                        "Typ": "falsch_ähnlich",
-                        "Text": "Ich trank, weil ich in Deutschland viele neue Freunde hatte."
-                    },
-                    {
-                        "Typ": "falsch_total",
-                        "Text": "Ich trank, weil ich Durst hatte."
-                    }
-                ]
-            },
+           {
+    "Frage": "Warum haben Sie getrunken? Ursachen?",
+    "Antworten": [
+        {
+            "Typ": "richtig",
+            "Text": "Die Ursache meines Alkoholkonsums lag in meiner Vergangenheit und meinem Denken. In Rumänien fühlte ich mich trotz der Bemühungen meiner Eltern manchmal zurückgesetzt. Als ich 2019 mit 36 Jahren nach Deutschland zog, war es eine schwere Zeit: Die Trennung von meiner Frau, meinen Kindern und meinen Eltern belastete mich stark, und ich fühlte mich einsam und verloren. Ich begann regelmäßig Alkohol zu konsumieren, zunächst auch allein, um Stress zu reduzieren und meine Probleme zu vergessen. Am neuen Arbeitsplatz fand ich rumänische Freunde und begann mit ihnen zu trinken, da ich mich in ihrer Gruppe akzeptiert fühlte. Um dazu zu gehören, wollte ich allen gefallen, half anderen und konnte nicht nein sagen. Aus Angst vor Ablehnung sprach ich mit niemandem über meine Probleme. Schließlich verlor ich die Kontrolle über meinen Alkoholkonsum."
+        },
+        {
+            "Typ": "falsch_ähnlich",
+            "Text": "Ich trank, weil ich in Deutschland viele neue Freunde hatte."
+        },
+        {
+            "Typ": "falsch_total",
+            "Text": "Ich trank, weil ich Durst hatte."
+        }
+    ]
+},
+
             {
                 "Frage": "Wie haben Sie mit Stress in der Vergangenheit umgegangen?",
                 "Antworten": [
@@ -505,54 +460,41 @@ const qa_data = [
                 ]
             },
             {
-                "Frage": "Welche Funktion hatte der Konsum in der Zeit, in der Sie exzessiv Alkohol tranken?",
-                "Antworten": [
-                    {
-                        "Typ": "richtig",
-                        "Text": `
-                        <ul>
-                            <li>Ich trank Alkohol, um <strong>Stress zu reduzieren</strong>.</li>
-                            <li>Der Konsum half mir, <strong>Probleme zu vergessen</strong>, wie die <strong>Trennung</strong> von meiner Familie und die Herausforderungen meines neuen Lebens.</li>
-                            <li>Ich wollte <strong>akzeptiert</strong> und <strong>gehört</strong> werden.</li>
-                            <li>Das neue Leben war <strong>sehr schwer</strong> für mich, und Alkohol schien eine kurzfristige Lösung zu sein.</li>
-                        </ul>
-                        `
-                    },
-                    {
-                        "Typ": "falsch_ähnlich",
-                        "Text": "Der Alkoholkonsum war eine Möglichkeit, um mich besser zu fühlen."
-                    },
-                    {
-                        "Typ": "falsch_total",
-                        "Text": "Ich habe Alkohol nur getrunken, weil es Spaß gemacht hat."
-                    }
-                ]
-            },
+    "Frage": "Welche Funktion hatte der Konsum in der Zeit, in der Sie exzessiv Alkohol tranken?",
+    "Antworten": [
+        {
+            "Typ": "richtig",
+            "Text": "Der Konsum von Alkohol hatte für mich die Funktion, Stress zu reduzieren und Probleme zu vergessen, wie die Trennung von meiner Familie und die Herausforderungen meines neuen Lebens. Ich suchte durch den Konsum nach Akzeptanz und dem Gefühl, gehört zu werden. Das neue Leben fiel mir sehr schwer, und Alkohol schien mir eine kurzfristige Lösung zu sein."
+        },
+        {
+            "Typ": "falsch_ähnlich",
+            "Text": "Der Alkoholkonsum war eine Möglichkeit, um mich besser zu fühlen."
+        },
+        {
+            "Typ": "falsch_total",
+            "Text": "Ich habe Alkohol nur getrunken, weil es Spaß gemacht hat."
+        }
+    ]
+},
+
             {
-                "Frage": "Wie gehen Sie mit Stress in Ihrem heutigen Leben um? Wie haben Sie Stress reduziert?",
-                "Antworten": [
-                    {
-                        "Typ": "richtig",
-                        "Text": `
-                        <ul>
-                            <li><strong>Offenheit:</strong> Ich spreche offen und ehrlich über meine Probleme.</li>
-                            <li><strong>Unterstützung:</strong> Ich suche bei Bedarf Unterstützung, sei es von Familie, Freunden oder professionellen Beratern.</li>
-                            <li><strong>Grenzen setzen:</strong> Ich drücke meine persönlichen Grenzen klar aus und sage entschlossen Nein, ohne Schuldgefühle.</li>
-                            <li><strong>Gesunde Strategien:</strong> Ich nutze gesunde Methoden zur Stressbewältigung wie Sport, Atemübungen und Spaziergänge in der Natur.</li>
-                            <li><strong>Fokus auf Positives:</strong> Ich konzentriere mich auf Aktivitäten, die mir Freude und Entspannung bringen.</li>
-                        </ul>
-                        `
-                    },
-                    {
-                        "Typ": "falsch_ähnlich",
-                        "Text": "Ich versuche Stress zu vermeiden, indem ich mich entspanne."
-                    },
-                    {
-                        "Typ": "falsch_total",
-                        "Text": "Wenn ich Stress habe, trinke ich ein Bier."
-                    }
-                ]
-            },
+    "Frage": "Wie gehen Sie mit Stress in Ihrem heutigen Leben um? Wie haben Sie Stress reduziert?",
+    "Antworten": [
+        {
+            "Typ": "richtig",
+            "Text": "Heute gehe ich mit Stress um, indem ich offen und ehrlich über meine Probleme spreche. Ich suche bei Bedarf Unterstützung von Familie, Freunden oder professionellen Beratern. Ich setze klare Grenzen und sage entschlossen Nein, ohne Schuldgefühle zu haben. Zur Stressbewältigung nutze ich gesunde Strategien wie Sport, Atemübungen und Spaziergänge in der Natur. Außerdem konzentriere ich mich auf Aktivitäten, die mir Freude und Entspannung bringen."
+        },
+        {
+            "Typ": "falsch_ähnlich",
+            "Text": "Ich versuche Stress zu vermeiden, indem ich mich entspanne."
+        },
+        {
+            "Typ": "falsch_total",
+            "Text": "Wenn ich Stress habe, trinke ich ein Bier."
+        }
+    ]
+},
+
             {
                 "Frage": "Was spricht dagegen, dass Sie nicht alkoholabhängig waren?",
                 "Antworten": [
@@ -602,37 +544,23 @@ const qa_data = [
                 ]
             },
             {
-                "Frage": "Welche sind die Risikosituationen?",
-                "Antworten": [
-                    {
-                        "Typ": "richtig",
-                        "Text": `
-                        <p><strong>Lebenskrisen (Tod eines geliebten Menschen, schwere Krankheit, Arbeitsplatzverlust, etc.):</strong></p>
-                        <p>Ich setze auf die Unterstützung meiner Familie und meiner engen Freunde. Ich suche emotionale oder professionelle Hilfe, wenn nötig. Ich verwende Alkohol nicht als Trostmittel, sondern konzentriere mich auf gesunde Lösungen, wie körperliche Betätigung, Meditation oder Gespräche mit vertrauenswürdigen Personen. Ich sehe nach vorne und lebe weiter.</p>
-                        <p><strong>Wiedersehen mit alten Freunden, die Alkohol anbieten:</strong></p>
-                        <p>Ich weise höflich ab und sage: „Nein, danke, ich trinke keinen Alkohol. Ich bevorzuge eine Cola oder ein anderes alkoholfreies Getränk.“ Wenn der Druck weiterhin besteht, erwähne ich, dass ich gehen werde. Es ist wichtig, entschlossen zu sein, ohne lange Diskussionen.</p>
-                        <p><strong>Anbieten von Alkohol bei einer Geburtstagsparty oder einer Feier:</strong></p>
-                        <p>Ich sage klar und deutlich, dass ich nicht mehr Alkohol trinke, wegen meiner Probleme in der Vergangenheit. Ich erkläre, dass der Alkoholkonsum für mich eine Zeitverschwendung ist. Ich bevorzuge es, mit Wasser oder alkoholfreien Getränken anzustoßen und schlage denen im Kreis, die es versuchen möchten. Wenn die Situation unangenehm wird, kann ich gehen.</p>
-                        <p><strong>Stress am Arbeitsplatz:</strong></p>
-                        <p>In stressigen Situationen am Arbeitsplatz verwende ich Alkohol nicht, um mich zu entspannen. Ich habe gelernt, Stress auf eine gesunde Weise zu bewältigen: Ich mache eine Pause, gehe spazieren oder spreche mit einem vertrauenswürdigen Kollegen. Ich praktiziere Atemtechniken oder Sport, um mich zu beruhigen.</p>
-                        <p><strong>Einsamkeit oder Langeweile:</strong></p>
-                        <p>In der Vergangenheit verwendete ich Alkohol, wenn ich mich einsam oder gelangweilt fühlte. Jetzt habe ich eine andere Routine: Ich habe neue Hobbys gefunden, mache Sport oder verbringe Zeit mit meiner Familie. Ich vermeide es, isoliert zu sein, und engagiere mich in Aktivitäten, die mir Freude bereiten.</p>
-                        <p><strong>Feiern oder traditionelle Veranstaltungen:</strong></p>
-                        <p>Bei Feiern, bei denen Alkoholkonsum üblich ist, konzentriere ich mich auf die Atmosphäre und die Freude des Moments, nicht auf das Trinken. Ich bereite mich im Voraus mit alkoholfreien Getränken vor und habe genauso viel Spaß ohne Alkohol.</p>
-                        <p><strong>Sozialer Druck in einer neuen Freundesgruppe:</strong></p>
-                        <p>Wenn ich neue Leute treffe, bin ich von Anfang an ehrlich: „Ich trinke keinen Alkohol, ich habe diese Entscheidung für mich getroffen.“ Ich gebe diese Information ruhig und selbstbewusst weiter, um zukünftigen Druck zu vermeiden.</p>
-                        `
-                    },
-                    {
-                        "Typ": "falsch_ähnlich",
-                        "Text": "Risikosituationen sind für mich immer noch schwierig, aber ich versuche sie zu meistern."
-                    },
-                    {
-                        "Typ": "falsch_total",
-                        "Text": "Es gibt keine Risikosituationen für mich."
-                    }
-                ]
-            },
+    "Frage": "Welche sind die Risikosituationen?",
+    "Antworten": [
+        {
+            "Typ": "richtig",
+            "Text": "Lebenskrisen wie der Tod eines geliebten Menschen, schwere Krankheiten oder der Verlust des Arbeitsplatzes stellen für mich potenzielle Risikosituationen dar. Ich setze in solchen Fällen auf die Unterstützung meiner Familie und enger Freunde und suche bei Bedarf professionelle Hilfe. Alkohol nutze ich nicht als Trostmittel, sondern konzentriere mich auf gesunde Alternativen wie körperliche Betätigung, Meditation oder Gespräche mit vertrauenswürdigen Personen. Situationen wie Wiedersehen mit alten Freunden, die Alkohol anbieten, lehne ich höflich ab und bleibe entschlossen. Ebenso vermeide ich Alkohol auf Feiern, indem ich offen erkläre, dass ich keinen Alkohol mehr konsumiere, und greife auf alkoholfreie Getränke zurück. Stress am Arbeitsplatz bewältige ich durch Pausen, Spaziergänge oder Atemübungen. Einsamkeit und Langeweile überwinde ich durch neue Hobbys, Sport oder Zeit mit der Familie. In neuen sozialen Gruppen bin ich von Anfang an ehrlich über meine Entscheidung, keinen Alkohol zu konsumieren, und verhindere so unnötigen Druck."
+        },
+        {
+            "Typ": "falsch_ähnlich",
+            "Text": "Risikosituationen sind für mich immer noch schwierig, aber ich versuche sie zu meistern."
+        },
+        {
+            "Typ": "falsch_total",
+            "Text": "Es gibt keine Risikosituationen für mich."
+        }
+    ]
+},
+
             {
                 "Frage": "Wo sehen Sie das Risiko eines Rückfalls, das gleiche Delikt wieder zu begehen? Warum ist das Risiko eines Rückfalls minimal?",
                 "Antworten": [
@@ -677,43 +605,24 @@ const qa_data = [
                     }
                 ]
             },
-            {
-                "Frage": "Was haben Sie während der Vorbereitung auf die MPU gelernt?",
-                "Antworten": [
-                    {
-                        "Typ": "richtig",
-                        "Text": `
-                        <ul>
-                            <li>Wir haben über <strong>Delikte</strong> gesprochen.</li>
-                            <li>Wir haben meine Fehler analysiert und erkannt:</li>
-                            <ul>
-                                <li><strong>Ich dachte, ich werde nicht erwischt.</strong></li>
-                                <li><strong>Ich war ein Egoist.</strong></li>
-                                <li><strong>Ich habe das Gesetz nicht respektiert</strong>, indem ich unter Alkoholeinfluss gefahren bin.</li>
-                                <li><strong>Ich war ein Risiko</strong> für mich und andere.</li>
-                            </ul>
-                            <li>Ich kenne die <strong>Ursachen meines Konsums</strong>, z. B. meinen Wunsch nach Anerkennung und Zugehörigkeit.</li>
-                            <li>Ich weiß, dass Alkohol ein <strong>Gift für Nerven und Zellen</strong> ist und gesundheitsschädlich wirkt.</li>
-                            <li>Alkoholkonsum kann zu einer <strong>Abhängigkeit</strong> führen, da bei jeder Vergiftung Hirnzellen sterben.</li>
-                            <li>Regelmäßiger Konsum beeinträchtigt das <strong>Gedächtnis</strong> und führt zu einem Rückgang der <strong>Intelligenz</strong>.</li>
-                            <li>Ich habe gelernt, was <strong>Suchtgedächtnis</strong> bedeutet (das Gehirn erinnert sich an die Maximalwerte).</li>
-                            <li>Ich verstehe, was <strong>Toleranzsteigerung</strong> bedeutet (es wird immer mehr Alkohol benötigt).</li>
-                            <li>Ich kenne die Risiken von <strong>exzessivem Alkoholkonsum</strong>, wenn fünf oder mehr Gläser auf einmal konsumiert werden.</li>
-                            <li>Das Risiko, ein identisches Delikt zu begehen, kann nicht vollständig ausgeschlossen werden.</li>
-                            <li>Wir haben über die <strong>Vor- und Nachteile</strong> gesprochen, und ich fühle mich für die Zukunft vorbereitet.</li>
-                        </ul>
-                        `
-                    },
-                    {
-                        "Typ": "falsch_ähnlich",
-                        "Text": "Ich habe während der Vorbereitung auf die MPU etwas über Alkohol gelernt."
-                    },
-                    {
-                        "Typ": "falsch_total",
-                        "Text": "Die Vorbereitung auf die MPU hat mir nichts gebracht."
-                    }
-                ]
-            },
+           {
+    "Frage": "Was haben Sie während der Vorbereitung auf die MPU gelernt?",
+    "Antworten": [
+        {
+            "Typ": "richtig",
+            "Text": "Während der Vorbereitung auf die MPU habe ich viel über meine Delikte gelernt und meine Fehler analysiert. Ich habe erkannt, dass ich egoistisch gehandelt habe, das Gesetz nicht respektiert und unter Alkoholeinfluss ein Risiko für mich und andere dargestellt habe. Ich verstehe jetzt die Ursachen meines Konsums, wie meinen Wunsch nach Anerkennung und Zugehörigkeit. Außerdem habe ich gelernt, dass Alkohol ein Gift für Nerven und Zellen ist, das gesundheitsschädlich wirkt und zu Abhängigkeit führen kann. Ich weiß, dass regelmäßiger Alkoholkonsum das Gedächtnis beeinträchtigt und die Intelligenz senkt. Begriffe wie Suchtgedächtnis (das Gehirn erinnert sich an Maximalwerte) und Toleranzsteigerung (es wird immer mehr Alkohol benötigt) sind mir jetzt klar. Ich kenne die Risiken exzessiven Alkoholkonsums, insbesondere wenn große Mengen auf einmal konsumiert werden. Auch wenn das Risiko eines erneuten Delikts nie vollständig ausgeschlossen werden kann, fühle ich mich durch die Analyse der Vor- und Nachteile gut auf die Zukunft vorbereitet."
+        },
+        {
+            "Typ": "falsch_ähnlich",
+            "Text": "Ich habe während der Vorbereitung auf die MPU etwas über Alkohol gelernt."
+        },
+        {
+            "Typ": "falsch_total",
+            "Text": "Die Vorbereitung auf die MPU hat mir nichts gebracht."
+        }
+    ]
+},
+
             {
                 "Frage": "Wollen Sie Ihren Führerschein unbedingt zurück?",
                 "Antworten": [
